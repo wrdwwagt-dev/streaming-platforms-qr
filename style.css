@@ -544,4 +544,48 @@ p {
     align-self: center;
     margin-bottom: 1.5rem;
   }
+
+  .watch-card img{
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+
+  }
+}
+
+.socials {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* ICON STYLE */
+.socials a {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: var(--font-colors);
+  font-size: 1.1rem;
+
+  transition: 0.25s ease;
+}
+
+/* HOVER (subtle glow like your system) */
+.socials a:hover {
+  color: white;
+  border-color: var(--bright);
+
+  background: rgba(15,239,255,0.12);
+  transform: translateY(-2px);
 }
