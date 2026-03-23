@@ -4,382 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Find WRDW+ on Apple TV and Android TV</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      background: #1154a1;
-      color: #000;
-      font-family: Barlow, Arial, sans-serif;
-      padding: 24px;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .page {
-      width: 100%;
-      max-width: 980px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 48px;
-      width: 100%;
-
-    }
-
-    .header img {
-      width: min(220px, 50%);
-      height: auto;
-    }
-
-    .subhead-wrap {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      margin: 18px 0 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      color: #fff;
-    }
-
-    .subhead {
-      font-size: clamp(20px, 2vw, 28px);
-      font-weight: 800;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      background-color: #cd2129;
-      padding: 1rem 1.25rem;
-    }
-
-    .line-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      width: 120px;
-    }
-
-    .line {
-      height: 3px;
-      width: 100%;
-    }
-
-    .line-1 {
-      background: #1154a1;
-    }
-
-    .line-2 {
-      background: #243c81;
-    }
-
-    .desc {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 18px;
-      line-height: 1.5;
-      color: #fff;
-    }
-
-    .cards {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
-      margin-bottom: 56px;
-    }
-
-    .card {
-      background: #fff;
-      border: 4px solid #000;
-      padding: 38px 24px;
-      min-height: 360px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      text-align: center;
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-      box-shadow: 0 0 0 #000;
-    }
-
-    .card:hover {
-      transform: translate(-6px, -6px);
-      box-shadow: 12px 12px 0 #000;
-    }
-
-    .icon-box {
-      width: 110px;
-      height: 110px;
-      border: 2px solid #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 22px;
-      background: #fff;
-      transition: background 0.22s ease, color 0.22s ease;
-    }
-
-    .card:hover .icon-box {
-      background: #000;
-      color: #fff;
-    }
-
-    .label {
-      font-size: 14px;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.45);
-      margin-bottom: 8px;
-      letter-spacing: 0.03em;
-    }
-
-    .platform {
-      font-size: 24px;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .steps {
-      list-style: none;
-      width: 100%;
-      margin-top: 4px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .steps li {
-      font-size: 15px;
-      line-height: 1.45;
-      font-weight: 600;
-      background: #f4f4f4;
-      border: 2px solid #000;
-      padding: 12px 14px;
-    }
-
-    .steps strong {
-      font-weight: 900;
-    }
-
-    .note {
-      margin-top: 14px;
-      font-size: 12px;
-      line-height: 1.5;
-      color: rgba(0, 0, 0, 0.7);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-weight: 700;
-    }
-
-    .footer {
-      text-align: center;
-      width: 100%;
-    }
-
-    .footer-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 1.2rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      background-color: #cd2129;
-      color: #fff;
-      padding: 1.15rem 1.5rem;
-      border-radius: 999px;
-    }
-
-    .footer-link:hover {
-      background-color: #fff;
-      color: #1154a1;
-      text-decoration: underline;
-      text-underline-offset: 8px;
-      text-decoration-thickness: 3px;
-    }
-
-    .footer-line-wrap {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      width: 80px;
-      margin: 28px auto 20px;
-    }
-
-    .copyright {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.22em;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    .icon {
-      width: 54px;
-      height: 54px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2.2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    @media (max-width: 800px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .desc {
-        font-size: 16px;
-      }
-
-      .platform {
-        font-size: 20px;
-      }
-
-      .card {
-        min-height: auto;
-      }
-
-      .subhead {
-        white-space: normal;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="page">
-  <a href="javascript:history.back()" 
-  style="
-  display:inline-block;
-  margin-bottom:20px;
-  padding:10px 16px;
-  font-family:Barlow, Arial, sans-serif;
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-  background:#cd2129;
-  color:#fff;
-  border:3px solid #000;
-  text-decoration:none;
-  box-shadow:6px 6px 0 #000;
-  transition:all .15s ease;
-  ">
-  ← Back
-  </a>
+<body class="wrdw-plus-page">
 
-  
-    <header class="header">
-      <!-- Replace with your own logo path -->
-      <img src="assets/wrdwlogo.png" alt="WRDW+ logo"> <br>
+  <main class="wrdw-plus-shell howto-shell">
 
-      <div class="subhead-wrap">
-        <div class="subhead">How to Find WRDW+</div>
-        
-        
+    <a href="javascript:history.back()" class="button-1 glow-btn back-btn">
+      <span>← Back</span>
+    </a>
+
+    <section class="wrdw-plus-hero howto-hero">
+      <img src="assets/wrdwlogo.png" alt="WRDW+ logo" class="wrdw-plus-logo" />
+
+      <div class="wrdw-plus-hero-copy">
+        <span class="wrdw-plus-kicker">Smart TV Setup</span>
+        <h1>How to Find WRDW+</h1>
+        <p>
+          Follow the steps below to watch WRDW+ on your television.
+          Apple TV users should search for <strong>WRDW News 12</strong>.
+          Android TV or Google TV users can try searching <strong>WRDW</strong> or
+          <strong>WRDW News</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrdw-plus-grid howto-grid">
+
+      <article class="watch-card howto-card">
+        <div class="watch-card-content">
+          <div class="watch-card-top">
+            <h3>Apple TV</h3>
+            <p>Search the App Store and install WRDW+ on Apple TV.</p>
+          </div>
+
+          <ul class="howto-steps">
+            <li><strong>Step 1:</strong> Open the <strong>App Store</strong> on Apple TV.</li>
+            <li><strong>Step 2:</strong> Go to <strong>Search</strong>.</li>
+            <li><strong>Step 3:</strong> Type <strong>WRDW News 12</strong>.</li>
+            <li><strong>Step 4:</strong> Download the app and open it to watch WRDW+.</li>
+          </ul>
+
+          <p class="howto-note">Search for WRDW News 12, not just WRDW+.</p>
+        </div>
+
+        <div class="watch-card-icon">
+          <img src="assets/apple.png" alt="Apple TV icon" />
+        </div>
+      </article>
+
+      <article class="watch-card howto-card">
+        <div class="watch-card-content">
+          <div class="watch-card-top">
+            <h3>Android TV</h3>
+            <p>Use Google Play on your TV to search for the app.</p>
+          </div>
+
+          <ul class="howto-steps">
+            <li><strong>Step 1:</strong> Open <strong>Google Play</strong> on your TV.</li>
+            <li><strong>Step 2:</strong> Search <strong>WRDW</strong> or <strong>WRDW News</strong>.</li>
+            <li><strong>Step 3:</strong> If WRDW appears, install and open it.</li>
+            <li><strong>Step 4:</strong> If it does not appear, watch WRDW+ on <strong>Fire TV</strong> or <strong>Roku</strong> instead.</li>
+          </ul>
+
+          <p class="howto-note">Android TV availability may vary by device and store listing.</p>
+        </div>
+
+        <div class="watch-card-icon">
+          <img src="assets/android.png" alt="Android TV icon" />
+        </div>
+      </article>
+
+    </section>
+
+    <section class="wrdw-plus-app-section howto-help-section">
+      <div class="wrdw-plus-app-copy">
+        <span class="wrdw-plus-kicker">Still Need Help?</span>
+        <h2>More Ways to Watch</h2>
+        <p>
+          If the app does not appear on your device, you can still watch WRDW+ on Fire TV, Roku, mobile, or on WRDW.com.
+        </p>
       </div>
 
-      <p class="desc">
-        Follow the steps below to watch WRDW+ on your television.
-        Apple TV users should search for <strong>WRDW News 12</strong>.
-        Android TV or Google TV users can try searching <strong>WRDW</strong> or
-        <strong>WRDW News</strong>.
-      </p>
-    </header>
+      <div class="wrdw-plus-app-buttons">
+        <a href="index.html" class="button-1 glow-btn">
+          <span>Back to All Platforms</span>
+        </a>
 
-    <main class="cards">
-
-      <section class="card">
-        <div class="icon-box">
-          <!-- Apple TV / Cast icon -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="4" y="5" width="16" height="12" rx="2"></rect>
-            <path d="M5 19a3 3 0 0 1 3 3"></path>
-            <path d="M5 15a7 7 0 0 1 7 7"></path>
-            <path d="M5 11a11 11 0 0 1 11 11"></path>
-          </svg>
-        </div>
-
-        <div class="label">Watch On</div>
-        <div class="platform">Apple TV</div>
-
-        <ul class="steps">
-          <li><strong>Step 1:</strong> Open the <strong>App Store</strong> on Apple TV.</li>
-          <li><strong>Step 2:</strong> Go to <strong>Search</strong>.</li>
-          <li><strong>Step 3:</strong> Type <strong>WRDW News 12</strong>.</li>
-          <li><strong>Step 4:</strong> Download the app and open it to watch WRDW+.</li>
-        </ul>
-
-        <div class="note">
-          Search for WRDW News 12, not just WRDW+.
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="icon-box">
-          <!-- Android TV / Monitor icon -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="12" rx="1.5"></rect>
-            <line x1="12" y1="16" x2="12" y2="20"></line>
-            <line x1="8" y1="20" x2="16" y2="20"></line>
-          </svg>
-        </div>
-
-        <div class="label">Watch On</div>
-        <div class="platform">Android TV</div>
-
-        <ul class="steps">
-          <li><strong>Step 1:</strong> Open <strong>Google Play</strong> on your TV.</li>
-          <li><strong>Step 2:</strong> Search <strong>WRDW</strong> or <strong>WRDW News</strong>.</li>
-          <li><strong>Step 3:</strong> If WRDW appears, install and open it.</li>
-          <li><strong>Step 4:</strong> If it does not appear, watch WRDW+ on <strong>Fire TV</strong> or <strong>Roku</strong> instead.</li>
-        </ul>
-
-        <div class="note">
-          Android TV availability may vary by device and store listing.
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="footer">
-      <a class="footer-link" href="https://www.wrdw.com" target="_blank" rel="noopener noreferrer">
-        Visit WRDW.COM <span aria-hidden="true">↗</span>
-      </a>
-
-      <div class="footer-line-wrap">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
       </div>
+    </section>
 
-      <div class="copyright">
-        © 2026 WRDW / WAGT | Coded by JCorales
-      </div>
-    </footer>
-  </div>
+  </main>
+
 </body>
-<div style="
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:radial-gradient(circle at center,
-  rgba(0,0,0,0) 55%,
-  rgba(0,0,0,.25) 78%,
-  rgba(0,0,0,.45) 100%);
-  z-index:9999;">
-  </div>
 </html>

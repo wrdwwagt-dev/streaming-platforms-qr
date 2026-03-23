@@ -4,114 +4,163 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WRDW+ Live & Local News</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div style="
-position:fixed;
-inset:0;
-pointer-events:none;
-background:radial-gradient(circle at center,
-rgba(0,0,0,0) 55%,
-rgba(0,0,0,.25) 78%,
-rgba(0,0,0,.45) 100%);
-z-index:9999;">
-</div>
-  <div class="page">
+<body class="wrdw-plus-page">
 
-    <header class="header">
-      
-        <img src="assets/wrdwlogo.png" alt="">
+  <main class="wrdw-plus-shell">
+    <section class="wrdw-plus-hero">
+      <img src="assets/wrdwlogo.png" alt="WRDW+ logo" class="wrdw-plus-logo" />
 
-        <br><br>
-
-        <div class="subhead-wrap">
-            <div class="subhead">Live &amp; Local News</div>
-            <div class="line-group">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            </div>
-        </div>
-
-        <p class="desc">
-            Stream the latest news, weather, and sports from <br>Augusta's leading
-            news station directly to your television.
+      <div class="wrdw-plus-hero-copy">
+        <span class="wrdw-plus-kicker">Live &amp; Local</span>
+        <h1>Watch WRDW+</h1>
+        <p>
+          Stream local news, weather, sports, and special coverage across your favorite devices.
         </p>
-    </header>
+      </div>
+    </section>
 
-    <main class="cards">
-      <a class="card" href="howto.html"  rel="noopener noreferrer">
-        <div class="icon-box">
-          <!-- Monitor -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="12" rx="1.5"></rect>
-            <line x1="12" y1="16" x2="12" y2="20"></line>
-            <line x1="8" y1="20" x2="16" y2="20"></line>
-          </svg>
-        </div>
-        <div class="label">Available On</div>
-        <div class="platform">Android TV</div>
-        <div class="cta-small">Stream WRDW+ on Android TV</div>
-      </a>
+    <section class="wrdw-plus-grid">
 
-      <a class="card" href="https://www.amazon.com/Gray-Television-Group-Inc-WRDW/dp/B00V3UTYCG/ref=sr_1_1?dib=eyJ2IjoiMSJ9.AtHNfYzbgpXyY_YnyOP3ous43drBaMX0a3FNUxyXZ6cH26JgSj5NsEY0hrlxbkC1lopyIwOlf30Ebi5FaDkHIhEuNFF85GOk_E7z-qroZ6RUPEci7SPzohbVtKEGUMEXT2dv-m7UwzcfrzAgtrL5JhNv4e2z0to6wkCxSTVtkxx0rDSl7oZ9Iuu3VdN8RndeUsg3n0DgDNWbmGd4uY-rz-qqwYyTredY6j7JKq26Pk1RGzinBoDKDsV8p74Hl4OpvU2nxvjRGfGvf3qu_LxBPg.I5Zaxv7-gFUpqT1UcoP9mRevs05j0FicvTl4Kb1tfDs&dib_tag=se&keywords=wrdw%2B&qid=1773689378&s=mobile-apps&sr=1-1" target="_blank" rel="noopener noreferrer">
-        <div class="icon-box">
-          <!-- TV -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="4" y="7" width="16" height="11" rx="2"></rect>
-            <line x1="9" y1="3" x2="12" y2="7"></line>
-            <line x1="15" y1="3" x2="12" y2="7"></line>
-          </svg>
-        </div>
-        <div class="label">Available On</div>
-        <div class="platform">Fire TV</div>
-        <div class="cta-small">Stream WRDW+ on Fire TV</div>
-      </a>
-
-      <a class="card" href="howto.html" rel="noopener noreferrer">
-        <div class="icon-box">
-          <!-- Cast -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="4" y="5" width="16" height="12" rx="2"></rect>
-            <path d="M5 19a3 3 0 0 1 3 3"></path>
-            <path d="M5 15a7 7 0 0 1 7 7"></path>
-            <path d="M5 11a11 11 0 0 1 11 11"></path>
-          </svg>
-        </div>
-        <div class="label">Available On</div>
-        <div class="platform">Apple TV</div>
-        <div class="cta-small">Stream WRDW+ on Apple TV</div>
-      </a>
-
-      <a class="card" href="https://channelstore.roku.com/details/efa224ec93c4f431445c176462052a7f:6d809f5ff3d060c5cb4a517232f8e0d5/wrdw-news-12-wagt-news-26" target="_blank" rel="noopener noreferrer">
-        <div class="icon-box">
-          <!-- Smartphone -->
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
-            <circle cx="12" cy="18" r="0.8" fill="currentColor" stroke="none"></circle>
-          </svg>
-        </div>
-        <div class="label">Available On</div>
-        <div class="platform">Roku</div>
-        <div class="cta-small">Stream WRDW+ on Roku</div>
-      </a>
-    </main>
-
-    <footer class="footer">
-      <a class="footer-link" href="https://www.wrdw.com" target="_blank" rel="noopener noreferrer">
-        Visit WRDW.COM
-        <span aria-hidden="true">↗</span>
-      </a>
-
-      <div class="footer-line-wrap">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
+  <!-- SMART TV -->
+  <article class="watch-card watch-card-split">
+    <div class="watch-card-content">
+      <div class="watch-card-top">
+        <h3>Smart TV</h3>
+        <p>Learn how to install it on your Apple TV &amp; Android TV.</p>
       </div>
 
-      <div class="copyright">
-        © 2026 WRDW / WAGT | Coded by <span style="color: #ffcc00;"><a href="https://www.jcorales.art" target="_blank">JCorales</a></span> Fueled by coffee and deadlines.
+      <div class="watch-card-actions">
+        <a href="howto.html" class="button-1 glow-btn">
+          <span>How to Install</span>
+        </a>
       </div>
-    </footer>
-  </div>
+    </div>
+
+    <div class="watch-card-icon-group">
+      <img src="assets/apple.png" alt="Apple TV">
+      <img src="assets/android.png" alt="Android TV">
+    </div>
+  </article>
+
+
+  <!-- FIRE TV -->
+  <article class="watch-card watch-card-split">
+    <div class="watch-card-content">
+      <div class="watch-card-top">
+        <h3>Fire TV</h3>
+        <p>Download WRDW+ directly from the Amazon Appstore.</p>
+      </div>
+
+      <div class="watch-card-actions">
+        <a href="https://www.amazon.com/Gray-Television-Group-Inc-WRDW/dp/B00V3UTYCG/"
+           target="_blank"
+           class="button-1 glow-btn">
+          <span>Open Fire TV App</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="watch-card-icon">
+      <img src="assets/firetv.png" alt="Fire TV">
+    </div>
+  </article>
+
+
+  <!-- ROKU -->
+  <article class="watch-card watch-card-split">
+    <div class="watch-card-content">
+      <div class="watch-card-top">
+        <h3>Roku</h3>
+        <p>Install the WRDW News 12 / WAGT News 26 channel on Roku.</p>
+      </div>
+
+      <div class="watch-card-actions">
+        <a href="https://channelstore.roku.com/details/efa224ec93c4f431445c176462052a7f:6d809f5ff3d060c5cb4a517232f8e0d5/wrdw-news-12-wagt-news-26"
+           target="_blank"
+           class="button-1 glow-btn">
+          <span>Open Roku Channel</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="watch-card-icon">
+      <img src="assets/roku.png" alt="Roku">
+    </div>
+  </article>
+
+
+  <!-- WEB -->
+  <article class="watch-card watch-card-split">
+    <div class="watch-card-content">
+      <div class="watch-card-top">
+        <h3>WRDW.com</h3>
+        <p>Watch coverage and browse stories directly on WRDW.com.</p>
+      </div>
+
+      <div class="watch-card-actions">
+        <a href="https://www.wrdw.com"
+           target="_blank"
+           class="button-1 glow-btn">
+          <span>Visit WRDW.com</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="watch-card-icon">
+      <img src="assets/WRDW+.png" alt="Web">
+    </div>
+  </article>
+
+</section>
+
+    <section class="wrdw-plus-app-section">
+      <div class="wrdw-plus-app-copy">
+        <img src="assets/1226.png" alt="" style="width: 20%;">
+        <h2>Stay updated with your local news!</h2>
+        <p>
+          Download our <span style="color: aqua;">FREE</span> News 12 26 app on your phone for local coverage wherever you go.
+        </p>
+      </div>
+
+      <div class="wrdw-plus-app-buttons">
+        <a href="https://apps.apple.com/us/app/wrdw-news-12/id420938201" class="button-1 glow-btn" target="_blank">
+          <span>Download on the App Store</span>
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.graytv.android.wrdwnews&hl=en_US" class="button-1 glow-btn" target="_blank">
+          <span>Get it on Google Play</span>
+        </a>
+      </div>
+    </section>
+
+    <br><br><br>
+
+    <section class="wrdw-plus-app-section">
+      <div class="wrdw-plus-app-copy">
+        <img src="assets/first-alert-weather.png" alt="" style="width: 20%;">
+        <h2>Download the First Alert Weather App</h2>
+        <p>
+          Stay ahead of the forecast with the WRDW weather app. Get local weather, radar, and alerts right on your phone.
+        </p>
+      </div>
+
+      <div class="wrdw-plus-app-buttons">
+        <a href="https://apps.apple.com/us/app/wrdw-weather/id1356247299" class="button-1 glow-btn" target="_blank">
+          <span>Download on the App Store</span>
+        </a>
+
+        <a href="https://play.google.com/store/apps/details?id=com.wrdw.android.weather&hl=en_US" class="button-1 glow-btn" target="_blank">
+          <span>Get it on Google Play</span>
+        </a>
+      </div>
+    </section>
+
+    
+
+    
+  </main>
+
 </body>
 </html>
